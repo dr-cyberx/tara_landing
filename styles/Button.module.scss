@@ -1,0 +1,27 @@
+@import 'variable.scss';
+
+.btn {
+  outline: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__primary {
+    background-color: $color-primary;
+    color: $color-dark-1;
+  }
+  &__secondary {
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+  }
+  &__small {
+  }
+  &__medium {
+    width: 163px;
+    height: 46px;
+    font-size: 18px;
+  }
+  &__large {
+  }
+}

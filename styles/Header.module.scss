@@ -1,0 +1,21 @@
+@import 'variable.scss';
+
+.header {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  color: $color-light;
+  padding: 20px 50px;
+
+  .itemLeft {
+    min-width: 450px;
+    max-width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
