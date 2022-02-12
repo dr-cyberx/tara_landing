@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const Button = () => {
+const Button: FunctionComponent = (): JSX.Element => {
   return <div>Button</div>;
 };
 

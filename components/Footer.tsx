@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const Footer = () => {
-  return (
-    <div>Footer</div>
-  );
+const Footer: FunctionComponent = () => {
+  return <div>Footer</div>;
 };
 
 export default Footer;

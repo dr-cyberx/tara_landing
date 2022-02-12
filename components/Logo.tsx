@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const Logo = () => {
+const Logo: FunctionComponent = (): JSX.Element => {
   return <div>Logo</div>;
 };
 

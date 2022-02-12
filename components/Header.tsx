@@ -1,9 +1,7 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react';
 
-const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+const Header: FunctionComponent = (): JSX.Element => {
+  return <div>Header</div>;
+};
 
-export default Header
+export default Header;

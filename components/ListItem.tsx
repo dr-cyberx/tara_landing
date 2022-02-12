@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const ListItem = () => {
+const ListItem: FunctionComponent = (): JSX.Element => {
   return <div>ListItem</div>;
 };
 

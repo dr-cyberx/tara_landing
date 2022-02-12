@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const SocialLinks = () => {
+const SocialLinks: FunctionComponent = (): JSX.Element => {
   return <div>SocialLinks</div>;
 };
 
