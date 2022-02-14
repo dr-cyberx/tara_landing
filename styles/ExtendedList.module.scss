@@ -43,3 +43,13 @@
     }
   }
 }
+
+.list_para_parent {
+  transition: min-height 0.3s ease-in-out;
+  &__true {
+    min-height: 50px;
+  }
+  &__false {
+    min-height: 0px;
+  }
+}

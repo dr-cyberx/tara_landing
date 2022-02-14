@@ -1,5 +1,4 @@
 import React, { FunctionComponent, useState, memo } from 'react';
-import classnames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 import styles from '@styles/ExtendedList.module.scss';
@@ -34,22 +33,31 @@ const ExtendedList: FunctionComponent<iExtendedList> = ({
         >
           {isClicked ? (
             <FontAwesomeIcon
-              icon={faPlus}
+              icon={faTimes}
               size={'1x'}
               style={{ color: 'white' }}
             />
           ) : (
             <FontAwesomeIcon
-              icon={faTimes}
+              icon={faPlus}
               size={'1x'}
               style={{ color: 'white' }}
             />
           )}
         </div>
       </div>
-        <div className={styles.list_para}>
-          <p>{paraContent}</p>
-        </div>
+      <div
+        className={classNames({
+          [styles[`list_para_parent`]]: true,
+          [styles[`list_para_parent__${isClicked}`]]: true,
+        })}
+      >
+        {isClicked && (
+          <div className={styles.list_para}>
+            <p>{paraContent}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

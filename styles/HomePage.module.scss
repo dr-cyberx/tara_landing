@@ -19,13 +19,12 @@
     position: absolute;
     height: 377px;
     width: 377px;
-    top: 670px;
-    left: -176px;
-    transform: rotate(20deg);
+    top: 630px;
+    left: -155px;
+    transform: rotate(-50deg);
     z-index: -1;
   }
   .midSubContainer {
-    // border: 2px solid red;
     // overflow-x: hidden;
     margin-top: 70px;
     display: flex;
@@ -71,9 +70,12 @@
     .midSubContainerChild2 {
       width: 55%;
       img {
-        border-radius: 20px;
-        height: 560px;
-        width: 660px;
+        border-radius: 25px;
+        height: 667px;
+        width: 752px;
+        -webkit-box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
+        -moz-box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
+        box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
       }
     }
   }
