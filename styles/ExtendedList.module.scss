@@ -5,7 +5,7 @@
   background: $color-entendedList;
   padding: 39px 46px;
   border-bottom: 2px solid $color-background-1;
-  transition: all 5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   .extendedList_Container {
     width: 100%;
     display: flex;
@@ -35,7 +35,7 @@
   .list_para {
     width: 569px;
     margin: auto;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.3s ease-in-out;
     p {
       color: $color-light;
       font-size: 18px;

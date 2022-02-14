@@ -47,12 +47,9 @@ const ExtendedList: FunctionComponent<iExtendedList> = ({
           )}
         </div>
       </div>
-
-      {isClicked && (
         <div className={styles.list_para}>
           <p>{paraContent}</p>
         </div>
-      )}
     </div>
   );
 };
