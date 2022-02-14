@@ -1,0 +1,45 @@
+@import 'variable.scss';
+
+.extendedList {
+  width: 100%;
+  background: $color-entendedList;
+  padding: 39px 46px;
+  border-bottom: 2px solid $color-background-1;
+  transition: all 5s ease-in-out;
+  .extendedList_Container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .list_value {
+      color: $color-primary;
+      width: 5%;
+    }
+    .list_heading {
+      width: 81%;
+      font-size: 32px;
+      color: $color-light;
+    }
+    .extended_btn {
+      cursor: pointer;
+      margin-top: 20px;
+      width: 9%;
+      height: 48px;
+      width: 48px;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .list_para {
+    width: 569px;
+    margin: auto;
+    transition: height 0.5s ease-in-out;
+    p {
+      color: $color-light;
+      font-size: 18px;
+      margin: 0px;
+    }
+  }
+}

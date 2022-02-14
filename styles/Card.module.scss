@@ -1,0 +1,33 @@
+@import 'variable.scss';
+
+.card {
+  background-color: transparent;
+  width: 450px;
+  min-height: 500px;
+  margin: auto;
+  margin-left: 56px;
+  padding: 0px 63px 0px 18px;
+  .card_header {
+    width: 100%;
+    min-height: 204px;
+    h1 {
+      font-size: 56px;
+      color: $color-light;
+      font-weight: 300;
+    }
+  }
+  .card_mid_section {
+    width: 100%;
+    min-height: 210px;
+    .para_1 {
+      font-size: 16px;
+      color: $color-light;
+    }
+    .para_2 {
+      font-size: 16px;
+      color: $color-light;
+    }
+  }
+  .card_bottom {
+  }
+}

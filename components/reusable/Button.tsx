@@ -1,8 +1,11 @@
-import React, { FunctionComponent, memo, MouseEventHandler } from 'react';
+import React, {
+  CSSProperties,
+  FunctionComponent,
+  memo,
+  MouseEventHandler,
+} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faArrowRightLong,
-} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import classnames from 'classnames';
 import styles from '@styles/Button.module.scss';
 
@@ -23,6 +26,7 @@ interface IButton {
   btnSize?: TypeButtonSize;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   icon?: React.ReactNode;
+  style?: CSSProperties;
 }
 
 const Button: FunctionComponent<IButton> = ({
@@ -31,6 +35,7 @@ const Button: FunctionComponent<IButton> = ({
   btnSize,
   onClick,
   icon,
+  style,
 }): JSX.Element => {
   return (
     <>
@@ -41,6 +46,7 @@ const Button: FunctionComponent<IButton> = ({
           [styles[`btn__${btnSize}`]]: true,
         })}
         onClick={onClick}
+        style={style}
       >
         {label}
         {icon && icon}

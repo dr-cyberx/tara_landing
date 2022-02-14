@@ -1,0 +1,35 @@
+@import 'variable.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  .footer_right_item {
+    width: 260px;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    .footer_right_semi_left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      span {
+        color: $color-light;
+        opacity: 0.5;
+        font-weight: 400;
+      }
+    }
+    p {
+      color: $color-light;
+      opacity: 0.5;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}

@@ -12,7 +12,7 @@
     height: 243px;
     width: 243px;
     top: 260px;
-    left: 555px;
+    left: 585px;
     z-index: -1;
   }
   .star2 {
@@ -25,27 +25,74 @@
     z-index: -1;
   }
   .midSubContainer {
-    margin-top: 3%;
+    // border: 2px solid red;
+    // overflow-x: hidden;
+    margin-top: 70px;
     display: flex;
     justify-content: space-around;
     .midSubContainerChild1 {
-      flex: 1;
+      width: 45%;
       .midSubContainerChild1_h1 {
-        font-size: 72px;
         width: 543px;
         padding: 0px 75px;
         color: $color-light;
         text-shadow: $color-secondary -2px 2px 2px;
+        h1 {
+          font-size: 72px;
+          margin-bottom: 15px;
+        }
+      }
+      .midSubContainerChild1_p {
+        // border: 2px solid red;
+        width: 543px;
+        height: 72px;
+        padding: 0px 75px;
+        color: $color-light;
+        p {
+          font-size: 16px;
+          width: 400px;
+          text-align: left;
+          margin: 25px 0px;
+        }
+      }
+      .midSubContainerChild1_btn {
+        margin-top: 55px;
+        width: 543px;
+        height: 72px;
+        padding: 0px 75px;
+        color: $color-light;
+      }
+      p {
+        width: 400px;
+        text-align: left;
+        margin: 0px;
       }
     }
     .midSubContainerChild2 {
-      flex: 1;
+      width: 55%;
       img {
-        // border: 2px solid red;
         border-radius: 20px;
         height: 560px;
         width: 660px;
       }
     }
+  }
+  .bottom_container {
+    width: 1312px;
+    margin: auto;
+    background: $color-background-1;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    display: flex;
+    margin-top: 190px;
+    transition: all 0.3s ease-in-out;
+    .bottom_container_card {
+      padding: 10px;
+      width: 512px;
+    }
+    .List_Container {
+      width: 798px;
+    }
+    margin-bottom: 80px;
   }
 }
