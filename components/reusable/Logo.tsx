@@ -1,6 +1,7 @@
 import React, { FunctionComponent, memo } from 'react';
 import Image from 'next/image';
 import logo from '../../public/logo.svg';
+import styles from '@styles/Logo.module.scss';
 
 export enum TypeLogo {
   LARGE = 'large',
@@ -13,7 +14,9 @@ interface ILogo {
 }
 
 const Logo: FunctionComponent<ILogo> = ({ type }): JSX.Element => {
-  const handleLogo = (type: TypeLogo | undefined): { height: number; width: number } => {
+  const handleLogo = (
+    type: TypeLogo | undefined
+  ): { height: number; width: number } => {
     switch (type) {
       case TypeLogo.SMALL:
         return { height: 100, width: 100 };
@@ -31,7 +34,12 @@ const Logo: FunctionComponent<ILogo> = ({ type }): JSX.Element => {
 
   return (
     <>
-      <Image src={logo} alt="Logo" {...handleLogo(type)} />
+      <Image
+        src={logo}
+        className={styles.Logo}
+        alt="Logo"
+        {...handleLogo(type)}
+      />
     </>
   );
 };

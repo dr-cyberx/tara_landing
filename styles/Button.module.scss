@@ -6,8 +6,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
   &__primary {
     background-color: $color-primary;
+    border: 2px solid $color-primary;
     color: $color-dark-1;
   }
   &__secondary {

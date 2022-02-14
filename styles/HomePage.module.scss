@@ -2,6 +2,50 @@
 
 .container {
   background: $color-background-1;
-  height: 100vh;
+  height: auto;
   width: 100vw;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 2;
+  .star1 {
+    position: absolute;
+    height: 243px;
+    width: 243px;
+    top: 260px;
+    left: 555px;
+    z-index: -1;
+  }
+  .star2 {
+    position: absolute;
+    height: 377px;
+    width: 377px;
+    top: 670px;
+    left: -176px;
+    transform: rotate(20deg);
+    z-index: -1;
+  }
+  .midSubContainer {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    .midSubContainerChild1 {
+      flex: 1;
+      .midSubContainerChild1_h1 {
+        font-size: 72px;
+        width: 543px;
+        padding: 0px 75px;
+        color: $color-light;
+        text-shadow: $color-secondary -2px 2px 2px;
+      }
+    }
+    .midSubContainerChild2 {
+      flex: 1;
+      img {
+        // border: 2px solid red;
+        border-radius: 20px;
+        height: 560px;
+        width: 660px;
+      }
+    }
+  }
 }

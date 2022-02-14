@@ -1,7 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import Logo, { TypeLogo } from './Logo';
-import styles from '@styles/Header.module.scss';
 import Button, { TypeButtontype, TypeButtonSize } from './Button';
+import styles from '@styles/Header.module.scss';
+import SocialLinks from './SocialLinks';
 
 const Header: FunctionComponent = (): JSX.Element => {
   return (
@@ -15,7 +16,7 @@ const Header: FunctionComponent = (): JSX.Element => {
           label="Dashboard"
           onClick={() => console.log('dashboard')}
         />
-        <p>social media links</p>
+        <SocialLinks />
       </div>
     </div>
   );
