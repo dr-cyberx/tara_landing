@@ -34,7 +34,7 @@
   }
   .list_para {
     width: 569px;
-    margin: auto;
+    margin: 0% 9%;
     transition: height 0.3s ease-in-out;
     p {
       color: $color-light;
@@ -45,11 +45,19 @@
 }
 
 .list_para_parent {
-  transition: min-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
   &__true {
-    min-height: 50px;
+    height: 80px;
+    transition:height 0.35s ease;
+    overflow:hidden;
+    max-height: 500px;
   }
   &__false {
-    min-height: 0px;
+    height:0;
+    transition:height 0.35s ease;
+    overflow:hidden; 
+  }
+  p{
+  text-align: left;
   }
 }

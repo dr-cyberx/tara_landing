@@ -7,15 +7,19 @@ import SocialLinks, { TypeLinks } from './SocialLinks';
 const Header: FunctionComponent = (): JSX.Element => {
   return (
     <div className={styles.header}>
-      <Logo type={TypeLogo.MEDIUM} />
+      <div className={styles.logo_container}>
+        <Logo type={TypeLogo.MEDIUM} />
+      </div>
       <div className={styles.itemLeft}>
         <p>Contact us</p>
-        <Button
-          btnSize={TypeButtonSize.MEDIUM}
-          btnType={TypeButtontype.SECONDARY}
-          label="Dashboard"
-          onClick={() => console.log('dashboard')}
-        />
+        <div className={styles.btn_container}>
+          <Button
+            btnSize={TypeButtonSize.MEDIUM}
+            btnType={TypeButtontype.SECONDARY}
+            label="Dashboard"
+            onClick={() => console.log('dashboard')}
+          />
+        </div>
         <div className={styles.header_right}>
           <SocialLinks types={TypeLinks.MEDIUM} />
         </div>

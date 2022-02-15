@@ -7,59 +7,88 @@
   overflow-y: hidden;
   position: relative;
   z-index: 2;
-  .star1 {
-    position: absolute;
-    height: 243px;
-    width: 243px;
-    top: 260px;
-    left: 585px;
-    z-index: -1;
-  }
-  .star2 {
-    position: absolute;
-    height: 377px;
-    width: 377px;
-    top: 630px;
-    left: -155px;
-    transform: rotate(-50deg);
-    z-index: -1;
-  }
+
   .midSubContainer {
     // overflow-x: hidden;
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
+
     .midSubContainerChild1 {
+      position: relative;
       width: 45%;
+      padding-left: 2%;
+      .star2 {
+        position: absolute;
+        height: 377px;
+        width: 377px;
+        top: 55%;
+        left: -155px;
+        transform: rotate(-50deg);
+        z-index: -1;
+      }
       .midSubContainerChild1_h1 {
-        width: 543px;
-        padding: 0px 75px;
+        width: 84%;
+        padding: 0% 9%;
         color: $color-light;
         text-shadow: $color-secondary -2px 2px 2px;
+        @media (min-width: $screen-length-bar-1) {
+          padding: 0% 8%;
+          width: 80%;
+        }
+        @media (min-width: $screen-length-bar-2) {
+          padding: 0% 8%;
+          width: 75%;
+        }
         h1 {
           font-size: 72px;
           margin-bottom: 15px;
+          @media (min-width: $screen-length-bar-1) {
+            font-size: 85px;
+          }
+          @media (min-width: $screen-length-bar-2) {
+            font-size: 90px;
+          }
         }
       }
       .midSubContainerChild1_p {
-        // border: 2px solid red;
-        width: 543px;
-        height: 72px;
-        padding: 0px 75px;
+        width: 79.9%;
+        height: auto;
+        padding: 0% 9%;
         color: $color-light;
         p {
           font-size: 16px;
-          width: 400px;
+          width: 100%;
+          line-height: 150%;
           text-align: left;
           margin: 25px 0px;
+          @media (min-width: $screen-length-bar-1) {
+            font-size: 1.3rem;
+            width: 525px;
+          }
+          @media (min-width: $screen-length-bar-2) {
+            font-size: 1.5rem;
+            width: 565px;
+          }
         }
       }
       .midSubContainerChild1_btn {
         margin-top: 55px;
-        width: 543px;
+        width: 79.9%;
+        height: auto;
+        padding: 0% 9%;
         height: 72px;
-        padding: 0px 75px;
         color: $color-light;
+        @media (min-width: $screen-length-bar-1) {
+          margin-top: 7%;
+          padding: 0% 14%;
+          transform: scale(1.2);
+        }
+        @media (min-width: $screen-length-bar-2) {
+          margin-top: 9%;
+          padding: 0% 16%;
+          transform: scale(1.3);
+        }
       }
       p {
         width: 400px;
@@ -69,18 +98,30 @@
     }
     .midSubContainerChild2 {
       width: 55%;
+      position: relative;
+
       img {
-        border-radius: 25px;
-        height: 667px;
-        width: 752px;
+        border-radius: 3.5%;
+        height: 85%;
+        width: 95%;
         -webkit-box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
         -moz-box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
         box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
       }
+      .star1 {
+        transform: rotate(90deg);
+        position: absolute;
+        height: 243px;
+        width: 243px;
+        top: 30px;
+        left: -70px;
+        z-index: -1;
+        background-color: transparent;
+      }
     }
   }
   .bottom_container {
-    width: 1312px;
+    width: 95%;
     margin: auto;
     background: $color-background-1;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
@@ -89,10 +130,10 @@
     margin-top: 190px;
     .bottom_container_card {
       padding: 10px;
-      width: 512px;
+      width: 35%;
     }
     .List_Container {
-      width: 798px;
+      width: 65%;
     }
     margin-bottom: 80px;
   }

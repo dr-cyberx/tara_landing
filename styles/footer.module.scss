@@ -4,17 +4,37 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 60px;
+  @media (min-width: $screen-length-bar-1) {
+    padding: 50px 100px;
+  }
+  @media (min-width: $screen-length-bar-2) {
+    padding: 70px 140px;
+  }
   .footer_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 300px;
+    @media (min-width: $screen-length-bar-1) {
+      transform: scale(1.2);
+    }
+    @media (min-width: $screen-length-bar-2) {
+      transform: scale(1.6);
+    }
   }
   .footer_right_item {
     width: 260px;
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
+    @media (min-width: $screen-length-bar-1) {
+      width: 280px;
+      transform: scale(1.2);
+    }
+    @media (min-width: $screen-length-bar-2) {
+      width: 300px;
+      transform: scale(1.4);
+    }
     .footer_right_semi_left {
       display: flex;
       flex-direction: column;
@@ -30,6 +50,12 @@
       opacity: 0.5;
       font-weight: 400;
       font-size: 14px;
+      @media (min-width: $screen-length-bar-1) {
+        font-size: 16px;
+      }
+      @media (min-width: $screen-length-bar-2) {
+        font-size: 18px;
+      }
     }
   }
 }

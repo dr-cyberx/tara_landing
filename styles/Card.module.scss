@@ -19,13 +19,31 @@
   .card_mid_section {
     width: 100%;
     min-height: 210px;
+    @media (min-width: $screen-length-bar-1) {
+      width: 110%;
+    }
+    @media (min-width: $screen-length-bar-2) {
+      width: 120%;
+    }
     .para_1 {
       font-size: 16px;
       color: $color-light;
+      @media (min-width: $screen-length-bar-1) {
+        font-size: 20px;
+      }
+      @media (min-width: $screen-length-bar-2) {
+        font-size: 22px;
+      }
     }
     .para_2 {
       font-size: 16px;
       color: $color-light;
+      @media (min-width: $screen-length-bar-1) {
+        font-size: 20px;
+      }
+      @media (min-width: $screen-length-bar-2) {
+        font-size: 22px;
+      }
     }
   }
   .card_bottom {

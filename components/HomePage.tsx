@@ -34,13 +34,12 @@ const HomePage: FunctionComponent = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <Header />
-      <img src="star1.svg" className={styles.star1} alt="star1" />
-      <img src="star2.svg" className={styles.star2} alt="star2" />
 
       {/* ------------------mid container---------------------- */}
 
       <div className={styles.midSubContainer}>
         <div className={styles.midSubContainerChild1}>
+          <img src="star2.svg" className={styles.star2} alt="star2" />
           <div className={styles.midSubContainerChild1_h1}>
             <h1>AI-powered crypto Dashboard</h1>
           </div>
@@ -56,10 +55,13 @@ const HomePage: FunctionComponent = (): JSX.Element => {
               btnType={TypeButtontype.PRIMARY}
               btnSize={TypeButtonSize.MEDIUM}
               onClick={() => console.log('clicked')}
+              label="Buy Now"
             />
           </div>
         </div>
         <div className={styles.midSubContainerChild2}>
+          <img src="star1.svg" className={styles.star1} alt="star1" />
+
           <img src="sideView.jpeg" alt="sideView" />
         </div>
       </div>
