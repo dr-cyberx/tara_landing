@@ -14,12 +14,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    min-width: 300px;
+    max-width: auto;
+    // border: 2px solid red;
     @media (min-width: $screen-length-bar-1) {
-      transform: scale(1.2);
+      min-width: 350px;
     }
     @media (min-width: $screen-length-bar-2) {
-      transform: scale(1.6);
+      min-width: 380px;
+    }
+    .Logo_container {
+      @media (min-width: $screen-length-bar-1) {
+        transform: scale(1.1);
+      }
+      @media (min-width: $screen-length-bar-2) {
+        transform: scale(1.3);
+      }
+    }
+    .socialLinks_container {
+      @media (min-width: $screen-length-bar-1) {
+        transform: scale(1.4);
+      }
+      @media (min-width: $screen-length-bar-2) {
+        transform: scale(1.5);
+      }
     }
   }
   .footer_right_item {

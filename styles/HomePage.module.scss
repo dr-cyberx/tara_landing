@@ -20,12 +20,23 @@
       padding-left: 2%;
       .star2 {
         position: absolute;
-        height: 377px;
-        width: 377px;
-        top: 55%;
-        left: -155px;
-        transform: rotate(-50deg);
+        height: 337px;
+        width: 337px;
+        left: -95px;
+        transform: rotate(0deg);
         z-index: -1;
+        top: 440px;
+        // border: 2px solid red;
+        transition: all 0.3s ease-in-out;
+        @media (max-width: 1380px) {
+          top: 530px;
+        }
+        @media (min-width: $screen-length-bar-1) {
+          top: 500px;
+        }
+        @media (min-width: $screen-length-bar-2) {
+          top: 580px;
+        }
       }
       .midSubContainerChild1_h1 {
         width: 84%;
@@ -43,6 +54,8 @@
         h1 {
           font-size: 72px;
           margin-bottom: 15px;
+          font-weight: 400;
+          margin-top: 15px;
           @media (min-width: $screen-length-bar-1) {
             font-size: 85px;
           }
@@ -57,17 +70,17 @@
         padding: 0% 9%;
         color: $color-light;
         p {
-          font-size: 16px;
+          font-size: 18px;
           width: 100%;
           line-height: 150%;
           text-align: left;
           margin: 25px 0px;
           @media (min-width: $screen-length-bar-1) {
-            font-size: 1.3rem;
+            font-size: 20px;
             width: 525px;
           }
           @media (min-width: $screen-length-bar-2) {
-            font-size: 1.5rem;
+            font-size: 22px;
             width: 565px;
           }
         }
@@ -101,8 +114,8 @@
       position: relative;
 
       img {
-        border-radius: 3.5%;
-        height: 85%;
+        border-radius: 3.9%;
+        height: 100%;
         width: 95%;
         -webkit-box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
         -moz-box-shadow: -60px 70px 119px -61px rgba(48, 36, 93, 1);
@@ -117,6 +130,7 @@
         left: -70px;
         z-index: -1;
         background-color: transparent;
+        box-shadow: none;
       }
     }
   }
@@ -127,7 +141,13 @@
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
       rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     display: flex;
-    margin-top: 190px;
+    margin-top: 18%;
+    @media (min-width: $screen-length-bar-1) {
+      margin-top: 12%;
+    }
+    @media (min-width: $screen-length-bar-2) {
+      margin-top: 15%;
+    }
     .bottom_container_card {
       padding: 10px;
       width: 35%;

@@ -9,8 +9,12 @@ const Footer: FunctionComponent = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footer_container}>
-        <Logo />
-        <SocialLinks types={TypeLinks.SMALL} />
+        <div className={styles.Logo_container}>
+          <Logo />
+        </div>
+        <div className={styles.socialLinks_container}>
+          <SocialLinks types={TypeLinks.SMALL} />
+        </div>
       </div>
       <div className={styles.footer_right_item}>
         <div className={styles.footer_right_semi_left}>

@@ -62,7 +62,7 @@ const HomePage: FunctionComponent = (): JSX.Element => {
         <div className={styles.midSubContainerChild2}>
           <img src="star1.svg" className={styles.star1} alt="star1" />
 
-          <img src="sideView.jpeg" alt="sideView" />
+          <img src="sideView_1.jpeg" alt="sideView" />
         </div>
       </div>
 
