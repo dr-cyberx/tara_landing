@@ -8,7 +8,6 @@ const _document = () => {
       <Html>
         <Head>
           <link rel="shortcut icon" href="favicon.ico" />
-          <title>Tara</title>
         </Head>
         <body>
           <Main />

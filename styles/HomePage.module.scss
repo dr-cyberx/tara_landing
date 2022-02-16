@@ -32,10 +32,13 @@
           top: 530px;
         }
         @media (min-width: $screen-length-bar-1) {
-          top: 500px;
+          top: 480px;
+          height: 457px;
+          width: 457px;
+          left: -125px;
         }
         @media (min-width: $screen-length-bar-2) {
-          top: 580px;
+          top: 540px;
         }
       }
       .midSubContainerChild1_h1 {

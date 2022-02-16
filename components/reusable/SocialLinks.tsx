@@ -53,18 +53,22 @@ const SocialLinks: FunctionComponent<iSocialLinks> = ({
   };
 
   return (
-    <div
-      className={styles.SocialLinks}
-      style={
-        types === TypeLinks.MEDIUM ? { width: '133.33px' } : { width: '100px' }
-      }
-    >
-      {Sociallinks.map((d) => (
-        <>
-          <Image src={d.icon} alt={d.alt} {...handlelinks(types)} />
-        </>
-      ))}
-    </div>
+    <>
+      <div
+        className={styles.SocialLinks}
+        style={
+          types === TypeLinks.MEDIUM
+            ? { width: '133.33px' }
+            : { width: '100px' }
+        }
+      >
+        {Sociallinks.map((d) => (
+          <>
+            <Image src={d.icon} alt={d.alt} {...handlelinks(types)} />
+          </>
+        ))}
+      </div>
+    </>
   );
 };
 
